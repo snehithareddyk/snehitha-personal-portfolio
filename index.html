@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio.</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cert">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+  <section class="home" id="home">
+    <!-- Canvas will be placed via JS -->
+    <div class="overlay-content">
+      <div class="home-content">
+        <h3>Hello!</h3>
+        <h1>I'm <span>Snehitha,</span></h1>
+        <h3><span class="text"></span></h3>
+        <a href="#" class="wipe-animated-link" download>
+          My Resume
+      </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="text">
+        <h1>About <span style="color: #ee4f06;">Me</span></h1>
+        <p>I am a curious and self-motivated individual with a strong passion for
+           continuous learning. Although I am at the beginning of my professional 
+           journey, I have already built projects that demonstrate my ability to work across the 
+           full stack from front-end interfaces to back-end logic.</p>
+        <p>I approach every project as an opportunity to learn, grow, and deliver meaningful solutions.
+          I am excited to connect with like-minded professionals and contribute to environments that value 
+          learning, collaboration, and innovation.</p>         
+    </div>
+    <div class="skills">
+        <h1>My <span style="color: #ee4f06;">Skills</span></h1>
+        <div class="icon-grid">
+            <div class="icon-card">
+                <img src="icons/html-5.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/css-3.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/java-script.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/1174949_js_react js_logo_react_react native_icon.svg" alt="React">
+                <p>React</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/1012818_code_development_logo_nodejs_icon.svg" alt="Node">
+                <p>Node</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/java.png" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/1012821_code_development_logo_mysql_icon.svg" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/google-cloud.svg" alt="Google Cloud">
+                <p>Google Cloud</p>
+            </div>
+            <div class="icon-card">
+                <img src="icons/salesforce.png" alt="Google Cloud">
+                <p>Salesforce</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="icons/skincancer.png" alt="Whisperzboxx Project">
+          <div class="tech-overlay">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Next.js</li>
+              <li>Typescript</li>
+              <li>Firebase</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>HireFlow</h3>
+          <p>A platform for users to practice mock interviews with ai voice agent and get feedback.</p>
+          <div style="display:flex; gap:10px">
+            <a href="#" class="icon-link" aria-label="Website">
+              <!-- SVG for a web/globe icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+            </a>
+            <a href="#" class="icon-text-link" aria-label="View Code">
+              <!-- Boxicon code icon -->
+              <i class='bx bx-code-alt'></i>
+              <span class="link-text">Code</span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="#" alt="Skill Enhancement">
+          <div class="tech-overlay">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Firebase</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Whisperzboxx</h3>
+          <p>A space to share and read the experiences, thoughts or confessions anonymously by users.</p>
+          <div style="display:flex; gap:10px">
+            <a href="#" class="icon-link" aria-label="Website">
+              <!-- SVG for a web/globe icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+            </a>
+            <a href="#" class="icon-text-link" aria-label="View Code">
+              <!-- Boxicon code icon -->
+              <i class='bx bx-code-alt'></i>
+              <span class="link-text">Code</span>
+          </a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="#" alt="Food Order App">
+          <div class="tech-overlay">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>SkillRoots</h3>
+          <p>A website for rural people to learn new skills like tailoring, handicrafts 
+            and find jobs close to home. </p>
+            <div style="display:flex; gap:10px">
+              <a href="#" class="icon-link" aria-label="Website">
+                <!-- SVG for a web/globe icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                </svg>
+              </a>
+              <a href="#" class="icon-text-link" aria-label="View Code">
+                <!-- Boxicon code icon -->
+                <i class='bx bx-code-alt'></i>
+                <span class="link-text">Code</span>
+            </a>
+            </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="icons/ruralmonitor.png" alt="To Do App">
+          <div class="tech-overlay">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Android Studio</li>
+              <li>Java</li>
+              <li>XML</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>To-Do App</h3>
+          <p>A user-friendly task manager app to create, update, and track your to-dos efficiently.</p>
+          <div style="display:flex; gap:10px">
+            <a href="#" class="icon-link" aria-label="Website">
+              <!-- SVG for a web/globe icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+            </a>
+            <a href="#" class="icon-text-link" aria-label="View Code">
+              <!-- Boxicon code icon -->
+              <i class='bx bx-code-alt'></i>
+              <span class="link-text">Code</span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cert-section" id="cert">
+    <div class="section-header">
+        <h2>Licenses & Certifications</h2>
+        <p>A collection of my professional credentials.</p>
+    </div>
+
+    <div class="cert-grid">
+        <!-- Card 1 -->        
+        <div class="cert-card" style="transition-delay: 200ms;">
+            <i class="fa-brands fa-google cert-icon"></i>
+            <h3 class="cert-title">Google Cloud Certified Associate Cloud Engineer</h3>
+            <p class="cert-issuer">Issued by Google Cloud</p>
+            <a href="https://drive.google.com/file/d/1U-hMh7LZmvtYqrrOtXyH25yWnSqdsrdk/view?usp=share_link" class="cert-link">View Credential &rarr;</a>
+        </div>
+        <!-- Card 2 -->
+        
+        <div class="cert-card" style="transition-delay: 100ms;">
+            <i class="fa-brands fa-aws cert-icon"></i>
+            <h3 class="cert-title">AWS AI-ML Virtual Internship</h3>
+            <p class="cert-issuer">Issued by AICTE</p>
+            <a href="https://drive.google.com/file/d/1bRvlt-7aPWCiKPRCtmnYHKV-BWpPDBOD/view?usp=sharing" class="cert-link">View Credential &rarr;</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="cert-card" style="transition-delay: 300ms;">
+          <i class="fa-brands fa-salesforce cert-icon"></i>
+            <h3 class="cert-title">Salesforce Developer Virtual Internship</h3>
+            <p class="cert-issuer">Issued by SmartInternz</p>
+            <a href="https://drive.google.com/file/d/1w9MmspDWSP4Upiowr4XDYEo1vmPNj0JW/view?usp=share_link" class="cert-link">View Credential &rarr;</a>
+        </div>
+    </div>
+</section>
+
+  <section class="contact-container" id="contact">
+    <div class="contact-card">
+        
+        <div class="info-panel">
+            <div class="info-content">
+                <div>
+                    <h2 class="title">Get in Touch</h2>
+                    <p class="description">Have a question or a project in mind? I'd love to hear from you. Send a message or connect with me on social media.</p>
+                </div>
+
+                <div class="socials-container">
+                    <h3 class="socials-title">Follow me</h3>
+                    <div class="socials-icons">
+                        <a href="https://x.com/Snehitha540363" aria-label="Twitter" class="social-icon">
+                            <i data-lucide="twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/snehithakommasani-705040227/" aria-label="LinkedIn" class="social-icon">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/snehithareddyk" aria-label="GitHub" class="social-icon">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/05._.sneha/" aria-label="Instagram" class="social-icon">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-panel">
+            <form id="contactForm">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder=" " class="form-input" required>
+                    <label for="name" class="form-label">Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder=" " class="form-input" required>
+                    <label for="email" class="form-label">Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="8" placeholder=" " class="form-input" required></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                </div>
+
+                <div>
+                    <button type="submit" class="submit-button">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+            <div id="successMessage" class="success-message">
+                <p><strong>Message Sent!</strong></p>
+                <p>Thank you for reaching out. I'll get back to you shortly.</p>
+            </div>
+        </div>
+        
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Snehitha Kommasani</h3>
+        <p>Web Developer | Designer | FullStack Developer</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://x.com/Snehitha540363" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/snehithakommasani-705040227/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/snehithareddyk" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/05._.sneha/" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Snehitha Reddy. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+
+  <script>
+    new Typed('.text', {
+      strings: ["Web Developer", "Computer Science UnderGrad", "FullStack Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script>
+    const container = document.querySelector('.home');
+
+    // Setup
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    camera.position.z = 6;
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setClearColor(0x000000, 1); // Black background
+    renderer.shadowMap.enabled = true; // Enable shadows
+
+    container.appendChild(renderer.domElement);
+
+    // Sphere on the right side
+    const geometry = new THREE.SphereGeometry(2.4, 44, 44);
+    const material = new THREE.MeshStandardMaterial({ color: 0xff3300 });
+    const sphere = new THREE.Mesh(geometry, material);
+    sphere.position.set(2.5, 0, 0); // Position to the right
+    sphere.castShadow = false;
+    scene.add(sphere);
+
+    // Lighting
+    /*scene.add(new THREE.AmbientLight(0xffffff, 0.4));
+    const light = new THREE.PointLight(0xffffff, 1);
+    light.position.set(5, 5, 5);
+    scene.add(light);*/
+    // Add a point light
+    const pointLight = new THREE.PointLight(0xe6e2d3, 1);
+    pointLight.position.set(1, 5, 11);
+    pointLight.castShadow = true;
+    scene.add(pointLight);
+
+    camera.position.z = 6;
+
+
+    // Animate
+    let speed = 0.01;
+    let colorChangeSpeed = 0.0007;
+    let hue = 0.1;
+
+    function animate() {
+        requestAnimationFrame(animate);
+        sphere.rotation.y += speed;
+        hue += colorChangeSpeed;
+
+      if (hue > 1) hue = 0;
+      material.color.setHSL(hue, 1, 0.5);
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Resize
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+  </script>
+
+  <script>
+    // JavaScript to add 'visible' class on scroll
+    const certCards = document.querySelectorAll('.cert-card');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+    certCards.forEach(card => {
+        observer.observe(card);
+    });
+</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxmrDBxIWp_fmGPP4oVGMdlrfl6OB4RQxLxt0IkR-Cbfm7PwpPeowjIO5JoQ7BZEVFj/exec';
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Send form data to Google Sheets via Apps Script
+            fetch(scriptURL, { method: 'POST', body: new FormData(contactForm) })
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+
+                    // Hide form, show success message
+                    contactForm.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    contactForm.reset();
+
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                        contactForm.style.display = 'flex';
+                    }, 5000);
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    successMessage.innerHTML = `<p><strong>Submission Failed!</strong></p><p>Please try again later.</p>`;
+                    successMessage.style.backgroundColor = '#fee2e2'; // red-100
+                    successMessage.style.color = '#b91c1c'; // red-700
+                    successMessage.style.display = 'block';
+                });
+        });
+    });
+</script>
+
+</body>
+</html>
