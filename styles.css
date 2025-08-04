@@ -162,18 +162,18 @@ transition: all 0.3s ease;
 }
 .wipe-animated-link {
   margin: 20px 0;
-  position: relative; /* Crucial for positioning the pseudo-element */
+  position: relative; 
   display: inline-block;
   padding: 10px 20px;
-  border: 2px solid #ee4f06; /* Tailwind's indigo-600 */
+  border: 2px solid #ee4f06; 
   border-radius: 30px;
-  color: #ee4f06; /* Text color matches the border */
+  color: #ee4f06;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  transition: color 0.4s ease; /* Smooth transition for text color */
-  overflow: hidden; /* Hides the pseudo-element when it's outside the button */
-  z-index: 1; /* Ensures text stays above the wipe effect */
+  transition: color 0.4s ease;
+  overflow: hidden; 
+  z-index: 1; 
 }
 
 .wipe-animated-link::before {
@@ -260,7 +260,6 @@ transition: all 0.3s ease;
   .icon-card img {
     width: 60px;
     height: 60px;
-    margin-bottom: 10px;
     transition: transform 0.3s ease;
   }
   
@@ -271,17 +270,17 @@ transition: all 0.3s ease;
   .icon-card p {
     font-size: 1rem;
     color: #fff;
-    margin-top: 5px;
+    margin:10px 0;
   }
   
   @media (max-width: 768px) {
     .about{
-      flex-direction: column; /* Stack text and icons */
-      gap: 20px; /* Add spacing between items */
+      flex-direction: column; 
+      gap: 20px; 
   }
   .text {
-      max-width: 90%; /* Reduce width for smaller screens */
-      margin: 0 auto; /* Center content */
+      max-width: 90%;
+      margin: 0 auto; 
   }
     .text h1 {
       font-size: 2rem;
@@ -326,7 +325,6 @@ transition: all 0.3s ease;
   margin-bottom: 2rem;
 }
 
-/* Grid Layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -424,18 +422,16 @@ transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: background-color 0.4s ease;
-  overflow: hidden; /* Ensures the border animation stays within the circle */
+  overflow: hidden; 
 }
 
-/* Styling for the SVG icon inside the link */
 .icon-link svg {
   width: 30px;
   height: 30px;
-  fill: #a0a0a0; /* Initial color of the icon */
+  fill: #a0a0a0; 
   transition: fill 0.4s ease;
 }
 
-/* On hover, change the background and icon color */
 .icon-link:hover {
   background-color: #333;
 }
@@ -456,26 +452,23 @@ transition: all 0.3s ease;
   text-decoration: none;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: background-color 0.4s ease;
-  overflow: hidden; /* Ensures the border animation stays within the container */
+  overflow: hidden;
 }
 
-/* Styling for the Boxicon icon */
 .icon-text-link i {
-  font-size: 30px; /* Control the icon size */
-  color: #a0a0a0; /* Initial color of the icon */
+  font-size: 30px; 
+  color: #a0a0a0; 
   transition: color 0.4s ease;
   margin-right: 5px;
 }
 
-/* Styling for the text */
 .link-text {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #a0a0a0; /* Initial color of the text */
+  color: #a0a0a0;
   transition: color 0.4s ease;
 }
 
-/* On hover, change the background, icon, and text color */
 .icon-text-link:hover {
   background-color: #333;
 }
@@ -487,10 +480,8 @@ transition: all 0.3s ease;
 .icon-text-link:hover .link-text {
   color: #ffffff;
   transform: scale(1.1);
-  
 }
 
-/* Responsive Typography */
 @media (max-width: 600px) {
   .projects-section h2 {
     font-size: 2rem;
@@ -527,7 +518,6 @@ transition: all 0.3s ease;
   gap: 2rem;
 }
 
-/* Individual Certificate Card */
 .cert-card {
   background-color: #181819;
   border-radius: 12px;
@@ -540,7 +530,6 @@ transition: all 0.3s ease;
   flex-direction: column;
 }
 
-/* Animation class added by JS */
 .cert-card.visible {
   opacity: 1;
   transform: translateY(0);
@@ -551,14 +540,12 @@ transition: all 0.3s ease;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Icon Styling */
 .cert-icon {
-  font-size: 2.5rem; /* Makes the icon larger */
+  font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #b35919; /* Main accent color */
+  color: #b35919;
 }
 
-/* Card Content */
 .cert-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -568,7 +555,7 @@ transition: all 0.3s ease;
 .cert-issuer {
   color: #a0a0a0;
   margin-top: 0.5rem;
-  flex-grow: 1; /* Pushes link to the bottom */
+  flex-grow: 1; 
 }
 
 .cert-link {
@@ -583,7 +570,6 @@ transition: all 0.3s ease;
   text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
   .cert-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -612,21 +598,20 @@ transition: all 0.3s ease;
 
 .contact-card {
   width: 100%;
-  max-width: 64rem; /* max-w-6xl */
+  max-width: 64rem;
   margin: auto;
   background-color: rgba(26, 26, 26, 0.8);
   backdrop-filter: blur(4px);
-  border-radius: 1rem; /* rounded-2xl */
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); /* shadow-2xl */
+  border-radius: 1rem; 
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25); 
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-/* --- Info Panel (Left Side) --- */
 .info-panel {
-  background-color: rgba(104, 104, 104, 0.1); /* bg-blue-500/10 */
-  padding: 2rem; /* p-8 */
+  background-color: rgba(104, 104, 104, 0.1);
+  padding: 2rem; 
 }
 
 .info-content {
@@ -637,59 +622,58 @@ transition: all 0.3s ease;
 }
 
 .title {
-  font-size: 1.875rem; /* text-3xl */
-  font-weight: 700; /* font-bold */
-  color: #df5504; /* text-gray-900 */
+  font-size: 1.875rem; 
+  font-weight: 700; 
+  color: #df5504; 
   line-height: 1.2;
   letter-spacing: -0.025em;
 }
 
 .description {
-  margin-top: 1rem; /* mt-4 */
-  color: #d2d2d2; /* text-gray-600 */
+  margin-top: 1rem;
+  color: #d2d2d2; 
 }
 
 .socials-container {
-  margin-top: 2.5rem; /* mt-10 */
+  margin-top: 2.5rem; 
 }
 
 .socials-title {
-  font-size: 1.125rem; /* text-lg */
-  font-weight: 600; /* font-semibold */
-  color: #939292; /* text-gray-800 */
+  font-size: 1.125rem; 
+  font-weight: 600; 
+  color: #939292; 
 }
 
 .socials-icons {
-  margin-top: 1rem; /* mt-4 */
+  margin-top: 1rem; 
   display: flex;
-  gap: 1.5rem; /* space-x-6 */
+  gap: 1.5rem;
 }
 
 .social-icon {
-  color: #eeeeee; /* text-gray-500 */
+  color: #eeeeee;
   transition: color 0.3s, transform 0.3s;
 }
 .social-icon svg {
-  width: 2rem; /* w-8 */
-  height: 2rem; /* h-8 */
+  width: 2rem; 
+  height: 2rem; 
 }
 .social-icon:hover {
   transform: scale(1.1);
 }
-.social-icon[aria-label="Twitter"]:hover { color: #3b82f6; } /* hover:text-blue-500 */
-.social-icon[aria-label="LinkedIn"]:hover { color: #1d4ed8; } /* hover:text-blue-700 */
-.social-icon[aria-label="GitHub"]:hover { color: #111827; } /* hover:text-gray-900 */
-.social-icon[aria-label="Instagram"]:hover { color: #ec4899; } /* hover:text-pink-500 */
+.social-icon[aria-label="Twitter"]:hover { color: #3b82f6; } 
+.social-icon[aria-label="LinkedIn"]:hover { color: #1d4ed8; } 
+.social-icon[aria-label="GitHub"]:hover { color: black; }
+.social-icon[aria-label="Instagram"]:hover { color: #ec4899; } 
 
-/* --- Form Panel (Right Side) --- */
 .form-panel {
-  padding: 2rem; /* p-8 */
+  padding: 2rem; 
 }
 
 #contactForm {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* space-y-8 */
+  gap: 2rem; 
 }
 
 .input-group {
@@ -703,90 +687,86 @@ transition: all 0.3s ease;
   padding: 0.75rem 1rem;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #d1d5db; /* border-gray-300 */
+  border-bottom: 2px solid #d1d5db;
   transition: border-color 0.3s;
   resize: none;
   font-size: 18px;
 }
 .form-input:focus {
   outline: none;
-  border-color: #dd620b; /* focus:border-blue-500 */
+  border-color: #dd620b;
 }
 
 .form-label {
   position: absolute;
   left: 1rem;
   top: 0.75rem;
-  color: #d1d1d1; /* text-gray-500 */
+  color: #d1d1d1; 
   pointer-events: none;
   transform-origin: top left;
   transition: all 0.3s;
 }
 
-/* Floating label effect */
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-1.25rem) scale(0.8);
-  color: #dd620b; /* blue-500 */
+  color: #dd620b; 
 }
 
 .submit-button {
   width: 100%;
-  background-color: #eb5325; /* bg-blue-600 */
+  background-color: #eb5325; 
   color: white;
   font-size: 1rem;
   padding: 1rem 1.5rem;
   border: none;
-  border-radius: 0.5rem; /* rounded-lg */
+  border-radius: 0.5rem; 
   cursor: pointer;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); /* shadow-lg */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1); 
   transition: all 0.3s ease-in-out;
 }
 .submit-button:hover {
-  background-color: #d8231d; /* hover:bg-blue-700 */
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); /* hover:shadow-xl */
+  background-color: #d8231d; 
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); 
   transform: translateY(-0.25rem);
 }
 .submit-button:focus {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(246, 106, 59, 0.5); /* focus:ring-4 focus:ring-blue-500/50 */
+  box-shadow: 0 0 0 4px rgba(246, 106, 59, 0.5); 
 }
 
-/* --- Success Message --- */
 .success-message {
-  display: none; /* hidden by default */
+  display: none; 
   margin-top: 1.5rem;
   padding: 1rem;
-  background-color: #dcfce7; /* bg-green-100 */
-  border: 1px solid #4ade80; /* border-green-400 */
-  color: #15803d; /* text-green-700 */
+  background-color: #dcfce7;
+  border: 1px solid #4ade80;
+  color: #15803d; 
   border-radius: 0.5rem;
 }
 .success-message p:first-child {
   font-weight: 700;
 }
 
-/* --- Responsive Design --- */
-@media (min-width: 768px) { /* md prefix */
+@media (min-width: 768px) { 
   .title {
-      font-size: 2.25rem; /* md:text-4xl */
+      font-size: 2.25rem; 
   }
 }
 
-@media (min-width: 1024px) { /* lg prefix */
+@media (min-width: 1024px) { 
   .contact-card {
       grid-template-columns: repeat(12, 1fr);
   }
   .info-panel {
       grid-column: span 5;
-      padding: 3rem; /* lg:p-12 */
+      padding: 3rem; 
   }
   .form-panel {
       grid-column: span 7;
-      padding: 3rem; /* lg:p-12 */
+      padding: 3rem; 
   }
 }
-
 
 /* Footer */ 
 .footer {
@@ -833,7 +813,6 @@ transition: all 0.3s ease;
   color: #666;
 }
 
-/* Responsive Layout */
 @media (min-width: 768px) {
   .footer-container {
     flex-direction: row;
